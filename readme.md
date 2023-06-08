@@ -104,7 +104,7 @@ Basic reverse proxy and container management with traefik and portainer
       - "traefik.http.routers.<service_name>.entrypoints=websecure"
     ```
 
-- Generate credential for traefik users. You can use  >> echo $(htpasswd -nb <username> <password>
+- Generate credential for traefik users. You can use  >> echo $(htpasswd -nb <username> <password>)
 - Edit /core/traefik-data/configurations/dynamic.yml file and change <user_credentials> with the generated credentials.
 - Edit /core/traefik-data/traefik.yml file and change <contact@domain.com> with your contact email.
 - Edit /core/docker-compose file and change <TRAEFIK_HOST> and <PORTAINER_HOST>.
